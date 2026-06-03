@@ -1,0 +1,4 @@
+__pycache__/
+instance/database.db
+expenses.xlsx
+expenses_report.pdf

@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #4f46e5,
+        #7c3aed,
+        #9333ea
+    );
+}
+
+/* MAIN CONTAINER */
+
+.container{
+    width:1000px;
+}
+
+/* CARD */
+
+.login-card{
+
+    display:flex;
+
+    height:550px;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,0.35);
+}
+
+/* LEFT SIDE */
+
+.login-left{
+
+    width:40%;
+
+    background:#0f172a;
+
+    color:white;
+
+    padding:60px 40px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+/* LOGO */
+
+.logo{
+
+    font-size:55px;
+
+    text-align:center;
+
+    margin-bottom:15px;
+}
+
+.login-left h2{
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:15px;
+}
+
+.login-left p{
+
+    text-align:center;
+
+    color:#94a3b8;
+
+    margin-bottom:35px;
+}
+
+/* INPUTS */
+
+.login-left input{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-bottom:18px;
+
+    border:none;
+
+    border-bottom:1px solid #475569;
+
+    background:transparent;
+
+    color:white;
+
+    outline:none;
+
+    font-size:15px;
+}
+
+.login-left input::placeholder{
+
+    color:#94a3b8;
+}
+
+/* BUTTON */
+
+.login-left button{
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #8b5cf6,
+        #4f46e5
+    );
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.login-left button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 10px 20px rgba(99,102,241,0.4);
+}
+
+/* REGISTER LINK */
+
+.register-link{
+
+    text-align:center;
+
+    margin-top:25px;
+}
+
+.register-link p{
+
+    color:#94a3b8;
+
+    margin-bottom:10px;
+}
+
+.register-btn{
+
+    display:inline-block;
+
+    padding:10px 25px;
+
+    border:1px solid #8b5cf6;
+
+    border-radius:25px;
+
+    color:#8b5cf6;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.register-btn:hover{
+
+    background:#8b5cf6;
+
+    color:white;
+}
+
+/* RIGHT SIDE */
+
+.login-right{
+
+    width:60%;
+
+    background:#111827;
+
+    overflow:hidden;
+}
+
+/* IMAGE */
+
+.theme-image{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+}

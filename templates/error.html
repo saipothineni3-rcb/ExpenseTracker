@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Error</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+            height:100vh;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            background:linear-gradient(
+                135deg,
+                #4f46e5,
+                #7c3aed,
+                #9333ea
+            );
+        }
+
+        .card{
+
+            width:450px;
+
+            background:white;
+
+            padding:40px;
+
+            border-radius:20px;
+
+            text-align:center;
+
+            box-shadow:
+            0 20px 50px rgba(0,0,0,0.25);
+        }
+
+        .icon{
+            font-size:70px;
+            margin-bottom:15px;
+        }
+
+        h2{
+            color:#ef4444;
+            margin-bottom:15px;
+        }
+
+        p{
+            color:#666;
+            margin-bottom:25px;
+        }
+
+        .btn{
+
+            display:inline-block;
+
+            padding:12px 30px;
+
+            border-radius:10px;
+
+            text-decoration:none;
+
+            color:white;
+
+            background:linear-gradient(
+                135deg,
+                #5B4BFF,
+                #7A5FFF
+            );
+        }
+
+        .btn:hover{
+            opacity:0.9;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="icon">
+        ❌
+    </div>
+
+    <h2>{{ title }}</h2>
+
+    <p>{{ message }}</p>
+
+    <a href="/forgot_password" class="btn">
+        ← Back
+    </a>
+
+</div>
+
+</body>
+</html>

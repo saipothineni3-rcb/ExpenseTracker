@@ -1,0 +1,270 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#5f4bff;
+}
+
+.main-container{
+    width:1000px;
+    height:700px;
+
+    background:white;
+
+    margin:40px auto;
+
+    display:flex;
+
+    box-shadow:0 15px 40px rgba(0,0,0,0.25);
+
+    overflow:hidden;
+
+    border-radius:10px;
+}
+
+/* LEFT SIDE */
+
+.left-panel{
+
+    width:45%;
+
+    background:
+    linear-gradient(
+        135deg,
+        #4f46e5,
+        #7c3aed
+    );
+
+    color:white;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.left-panel::before{
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    background:rgba(255,255,255,0.08);
+
+    border-radius:50%;
+
+    top:-150px;
+    left:-150px;
+}
+
+.left-panel::after{
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+    height:300px;
+
+    background:rgba(255,255,255,0.08);
+
+    border-radius:50%;
+
+    bottom:-120px;
+    right:-120px;
+}
+
+.top-link{
+    padding:20px;
+    font-size:14px;
+}
+
+.welcome-content{
+
+    text-align:center;
+
+    margin-top:150px;
+}
+
+.welcome-content h1{
+
+    font-size:60px;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+}
+
+.login-btn{
+
+    display:inline-block;
+
+    color:white;
+
+    border:1px solid white;
+
+    padding:10px 35px;
+
+    border-radius:25px;
+
+    text-decoration:none;
+
+    margin-top:15px;
+}
+
+.login-btn:hover{
+
+    background:white;
+
+    color:#5f4bff;
+
+    transition:0.3s;
+}
+
+/* RIGHT SIDE */
+
+.right-panel{
+
+    width:55%;
+
+    position:relative;
+
+    padding:30px 40px;
+}
+
+.help-text{
+
+    position:absolute;
+
+    top:15px;
+
+    right:20px;
+
+    font-size:14px;
+}
+
+.register-form{
+
+    padding:20px 40px;
+}
+
+.register-form h2{
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+    font-size:36px;
+
+    font-weight:700;
+
+    color:#5B4BFF;
+
+    white-space:nowrap;
+}
+
+.register-form label{
+
+    font-size:18px;
+
+    margin-bottom:6px;
+
+    display:block;
+}
+
+.form-control{
+
+    margin-bottom:20px;
+
+    height:50px;
+
+    border-radius:10px;
+}
+
+.form-check{
+
+    margin-top:15px;
+
+    margin-bottom:20px;
+}
+
+.signup-btn{
+
+    width:100%;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    background:
+    linear-gradient(
+        135deg,
+        #5B4BFF,
+        #7A5FFF
+    );
+
+    color:white;
+
+    margin-top:10px;
+
+    transition:0.3s;
+}
+
+.signup-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(91,75,255,0.3);
+}
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-mode{
+    background:#121212 !important;
+    color:white !important;
+}
+
+.dark-mode .card{
+    background:#1f2937 !important;
+    color:white !important;
+}
+
+.dark-mode .table{
+    color:white !important;
+}
+
+.dark-mode .form-control{
+    background:#374151 !important;
+    color:white !important;
+    border:1px solid #6b7280 !important;
+}
+
+.dark-mode .form-control::placeholder{
+    color:#d1d5db !important;
+}
+
+.dark-mode .navbar{
+    background:#111827 !important;
+}
+
+.dark-mode .btn{
+    opacity:0.95;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p,
+.dark-mode label{
+    color:white !important;
+}
